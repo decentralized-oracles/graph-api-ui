@@ -1,0 +1,29 @@
+{
+  "name": "astar-phat-oracle",
+  "version": "1.0.0",
+  "description": "astar phat oracle",
+  "main": "index.js",
+  "author": "Arno",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@astar-network/astar-api": "^0.2.7",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "latest",
+    "@phala/sdk": "^0.5.6",
+    "@polkadot/api-contract": "^10.11.1",
+    "dayjs": "^1.11.10",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "^5.0.5"
+  }
+}

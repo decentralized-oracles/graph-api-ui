@@ -1,0 +1,16 @@
+{
+    "encoded": "NsQmxfnaNdzue8r2v4oT/sW2HQ3G0q89rqeu8MQvwDAAgAAAAQAAAAgAAACXQuXt63sIDGQ53PvfI3/X+NBH9+4GnFrrE2EShx90iuNqumC5S01Sa1wpYLDBfLf12C5tWjW2CO3K1TL4E3KuTF7mtubxahhggNphHtBxEn2Go6H4K966816dKZAM3iPLtvQMPjUr2qVmd23AMi7kO6gShKERzgLSLffVS7DBrz6AgzvrWwzEMvBQKN/98J5Ik69GIqh0GwYehqYP",
+    "encoding": {
+      "content": [
+        "pkcs8",
+        "sr25519"
+      ],
+      "type": [
+        "scrypt",
+        "xsalsa20-poly1305"
+      ],
+      "version": "3"
+    },
+    "address": "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY",
+    "meta": {}
+  }
