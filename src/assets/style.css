@@ -12,6 +12,14 @@ a:link {
 a:hover {
     text-decoration: underline;
 }
+
+.MuiMenu-list a {
+    color: inherit;
+}
+.MuiMenu-list a:hover {
+    text-decoration: none;
+}
+
 h2 {
     font-family:"unbounded";
     font-size: 1.3em;

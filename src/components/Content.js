@@ -1,67 +1,19 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
+
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+
 import Grid from '@mui/material/Grid';
 import Team from './Team';
 import DappOverview from './DappOverview';
-import dapp_svg from "../images/dapp.svg"
-import github_svg from "../images/github-white.svg"
 import dappschema_svg from "../images/graphApiOracle.svg"
 import { ApiStatus } from './ApiStatus';
-import { PhatContractContext } from '../context/PhatContractProvider';
-import { ContractContext } from '../context/AstarContractProvider';
-import { useContext } from 'react';
-import ErrorIcon from '@mui/icons-material/Error';
+import { Item } from './Item';
+
+import ErrorContract from './ErrorContract';
 
 export function Content() {
 
-  const {phatContract} = useContext(PhatContractContext)
-  const {contract} = useContext(ContractContext)
 
-  const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#202020' : '#fff',
-    ...theme.typography.body2,
-    textAlign: 'left',
-    padding: 20,    
-    color: theme.palette.text.secondary,
-    fontSize: '0.9em',
-    height: '100%',
-    borderRadius: '8px'
-  }));
-
-  const Github = (props)=>{
-    return <>
-      <Box>
-        <img style={{width:"25px", height:"25px", marginRight: "5px", verticalAlign: "bottom"}} src={github_svg}/>
-        <a style={{fontSize:"0.9em"}} href={props.href}>Visit GitHub</a>
-      </Box>
-    </>
-  }
-
-  const Dapp = (props)=>{
-    return <>
-      <Box>
-        <img style={{width:"25px", height:"25px", marginRight: "5px", verticalAlign: "bottom"}} src={dapp_svg}/>
-        <a style={{fontSize:"0.9em"}} href={props.href}>Launch the dApp</a>
-      </Box>
-    </>
-  }
-
-  const ErrorContract = ()=>{
-    if (!(contract && phatContract)) return <>
-      <Grid item xs={12} >
-          <Item>
-          <ErrorIcon color={'error'} sx={{display:'inline', float:'left'}} fontSize='large'/><h2 style={{marginTop: '5px', paddingLeft: '42px'}}>Error with contract</h2>
-            <p>the dApp can't connect to the following contract: </p>
-            <ul>
-            {!contract ? <li>Astar Smart Contract</li>:<></>}
-            {!phatContract ? <li>Phala Phat Contract</li>:<></>}
-            </ul>
-          </Item> 
-        </Grid> 
-    </>
-  }
 
   return <>
      <Grid container spacing={4}>
@@ -72,12 +24,12 @@ export function Content() {
               <ApiStatus context="phala" /><ApiStatus context="astar" />
             </Box>
             <h2>Graph API Oracle</h2>
-            <p>this dApp demonstrates the ability of an !ink smart contract and a Phala's Phat Contract to interact with each other using Phat Offchain Rollup. 
-              In this example we display values from Astar dApp staking contracts, stored in a Subquery index</p>
+            <p>This dApp demonstrates the ability of an ink! smart contract on Astar Network and a Phat Contract on Phala Network to interact with each other using Phat Offchain Rollup.</p>
+            <p>In this example we display values from Astar dApp Staking, stored in a SubQuery index</p>
           </Item> 
         </Grid> 
 
-        <ErrorContract />
+        {/*<ErrorContract />*/}
 
         <Grid item xs={12} md={4} >
           <Item>

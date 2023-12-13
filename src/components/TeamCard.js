@@ -34,7 +34,7 @@ export default function TeamCard(props) {
         subheader={props.title}
       />
       <CardContent>
-        <Typography color="text.secondary">
+        <Typography fontSize={'1em'} color="text.secondary">
         {props.description}
         </Typography>
       </CardContent>

@@ -99,14 +99,14 @@ export default function DappOverview(props) {
                 <SyncIcon 
                 fontSize="large" 
                 style={{cursor:enabled?'pointer':'not-allowed'}} 
-                disabled={!contract||(!loading&&globalUpdate)} 
+            
                 onClick={()=>{if (enabled) refreshData()}}
                 color={enabled?"success":"disabled"}
                 sx={{display:loading ? "none" : "inline-block"}}
                 />
                 <CircularProgress size={"1.5em"} sx={{mx:0.7, my:0.67, width:"25px", height:"25px", display: loading ? "inline-block" : "none"}} />
             </Box>
-            <Box><span>Total Stake: </span>{totalStake}</Box>
+            <Box><span>Stake: </span>{totalStake}</Box>
             <Box><span>Nb Staker: </span>{nbStaker}</Box>
             <Box><span>Updated: </span>{updated}</Box>
         </div>

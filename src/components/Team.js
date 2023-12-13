@@ -9,7 +9,7 @@ export default function Team(){
     return <>
     <h2>The team</h2>
     <p>Also know as "Team Lucky", Guigou and Arno are both passionated by web3 and have a strong desire to explore the all the possibilities offered by decentralized applications. you can find them in a lot of different places among the paraverse...</p>
-    <p>They have developed the Lucky dApp (<a href="https://lucky.substrate.fi">https://lucky.substrate.fi</a>), a no-loss lottery built on top of dApp Staking in Astar Network.</p>
+    <p>They have developed the Lucky dApp (<a href="https://lucky.substrate.fi">https://lucky.substrate.fi</a>), a no-loss lottery built on top of dApp Staking on Astar Network.</p>
     <Box>
         <TeamCard 
             name="Guigou"
