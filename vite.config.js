@@ -8,6 +8,11 @@ import fs from 'fs/promises';
 });*/
 
 export default defineConfig(() => ({
+  resolve: {
+    alias: {
+      buffer: 'buffer/',
+    },
+  },
   plugins: [react()],
   esbuild: {
     //loader: "jsx",

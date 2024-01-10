@@ -1,6 +1,5 @@
 import React from 'react';
 import { Typography } from '@mui/material';
-import { useContext } from "react";
 
 export function AppHeader() {
 

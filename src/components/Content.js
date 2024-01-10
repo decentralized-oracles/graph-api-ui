@@ -9,8 +9,6 @@ import dappschema_svg from "../images/graphApiOracle.svg"
 import { ApiStatus } from './ApiStatus';
 import { Item } from './Item';
 
-import ErrorContract from './ErrorContract';
-
 export function Content() {
 
 

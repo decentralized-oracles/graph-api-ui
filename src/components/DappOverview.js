@@ -10,15 +10,11 @@ import dayjs from 'dayjs';
 
 export default function DappOverview(props) {
 
-    const [queryTime,setQueryTime] = useState()
     const [totalStake,setTotalStake] = useState(0);
     const [nbStaker,setNbStaker] = useState(0);
     const [updated,setUpdated] = useState(0);
-    const [errorMessage,setErrorMessage] = useState("");
     const [loading,setLoading] = useState(false);
 
-    const [res1,setRes1] = useState()
-    const [res2,setRes2] = useState()
     const [res3,setRes3] = useState()
 
     const {phat_query_feedData, phatContract} = useContext(PhatContractContext)
@@ -68,9 +64,7 @@ export default function DappOverview(props) {
             console.log("_res2",_res2)
             phatOk = _res2?.state === "Ok"
         }
-        setRes2(_res2);
         const _queryTime = dayjs().valueOf()
-        setQueryTime(_queryTime);
         return _queryTime
     }
 

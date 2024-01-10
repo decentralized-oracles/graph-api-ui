@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
@@ -7,13 +6,10 @@ import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
-
 import github_svg from "../images/github.svg"
 import discord_svg from "../images/discord.svg"
 import telegram_svg from "../images/telegram.svg"
 import x_svg from "../images/x.svg"
-
 
 export default function TeamCard(props) {
   const [expanded, setExpanded] = React.useState(false);

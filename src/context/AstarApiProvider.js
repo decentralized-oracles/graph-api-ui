@@ -19,7 +19,7 @@ export const AstarApiProvider = ({ children }) => {
     try { 
       const provider = new WsProvider(PROVIDER_ENDPOINTS[network]);
       setProvider(provider);
-      const apiPromise = new ApiPromise(options({ provider }));
+      const apiPromise = new ApiPromise(options({ provider, noInitWarn: true }));
       await apiPromise.isReady;
       setapi(apiPromise);
       console.log("connected to "+network+" API: "+PROVIDER_ENDPOINTS[network])

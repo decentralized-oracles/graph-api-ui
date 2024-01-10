@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { PhalaApiContext } from "./PhalaApiProvider";
 import { Keyring } from "@polkadot/api";
-import { types } from "@phala/sdk";
 import { PinkContractPromise, OnChainRegistry, signCertificate } from '@phala/sdk'
 import { PHAT_CONTRACT_METADATA, PHAT_CONTRACT_ID, DEFAULT_NETWORKS } from "../lib/constants";
 import { AppContext } from "../context/ContextProvider";
@@ -32,7 +31,7 @@ export const PhatContractProvider = ({ children }) => {
           const contract = new PinkContractPromise(api, phatRegistry, abi, contractId, contractKey)
           
           const pair = new Keyring({ type: 'sr25519' }).addFromUri("//Alice")
-          setCert(await signCertificate({ api, pair }))
+          setCert(await signCertificate({ pair }))
           setContract(contract)
           
           console.log("Phat Contract loaded successfully");

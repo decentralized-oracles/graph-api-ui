@@ -25,6 +25,7 @@ export const PhalaApiProvider = ({ children }) => {
       //const provider = ;
       const api = await ApiPromise.create({ 
         provider,
+        noInitWarn: true,
         types: { ...types, ...typeDefinitions }
       });
       setapi(api);
