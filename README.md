@@ -4,7 +4,7 @@
 
 This repository is the UI for [Graph API contracts](https://github.com/decentralized-oracles/graph-api-oracle)
 
-main branch is deployed on [https://graph-api-decentralized-oracle.substrate.fi/](https://graph-api-decentralized-oracle.substrate.fi/)
+main branch is deployed on [https://decentralized-oracle.substrate.fi/graph-api](https://decentralized-oracle.substrate.fi/graph-api)
 
 ## Usage
 
