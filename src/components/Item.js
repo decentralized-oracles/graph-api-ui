@@ -7,7 +7,7 @@ export const Item = styled(Paper)(({ theme }) => ({
     textAlign: 'left',
     padding: 20,    
     color: theme.palette.text.secondary,
-    fontSize: '0.9em',
+    fontSize: '1.1em',
     height: '100%',
     borderRadius: '8px'
   }));

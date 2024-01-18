@@ -8,6 +8,11 @@ import fs from 'fs/promises';
 });*/
 
 export default defineConfig(() => ({
+  root: '.',
+  build: {
+    outDir: '../dist/graph-api'
+  },
+  base: '/graph-api',
   resolve: {
     alias: {
       buffer: 'buffer/',

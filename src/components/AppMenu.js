@@ -44,8 +44,9 @@ export default function AppMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem><a href="https://vrf-decentralized-oracle.substrate.fi/">VRF</a></MenuItem>
-        <MenuItem><a href="https://decentralized-oracle.substrate.fi/">Price Feed</a></MenuItem>
+        <a href="/vrf"><MenuItem>VRF</MenuItem></a>
+        <a href="/price-feed"><MenuItem>Price Feed</MenuItem></a>
+        <a href="/graph-api"><MenuItem>Graph API</MenuItem></a>
       </Menu>
     </div>
   );

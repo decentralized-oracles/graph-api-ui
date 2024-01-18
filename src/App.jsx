@@ -21,7 +21,7 @@ export default function App() {
         <AstarApiProvider>
           <PhatContractProvider>
             <AstarContractProvider>
-              <Container sx={{pt:2}} maxWidth="md">
+              <Container sx={{pt:2}} maxWidth="lg">
                 <Grid container spacing={2}>
                   <Grid item xs={9}>
                     <AppHeader /> 
