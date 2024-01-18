@@ -10,6 +10,7 @@ import fs from 'fs/promises';
 export default defineConfig(() => ({
   root: '.',
   build: {
+    emptyOutDir: true,
     outDir: '../dist/graph-api'
   },
   base: '/graph-api',
